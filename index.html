@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOOBEE EFT Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .program {
+            margin-bottom: 15px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOOBEE EFT Calculator</h1>
+    <div id="calculator">
+        <div class="program">
+            <label for="program0">Program 1 Index 3 (DQ7+):</label>
+            <input type="number" id="program0" />
+        </div>
+        <!-- Repeat for all 56 programs, modifying IDs and labels accordingly -->
+        <div>
+            <button class="button" onclick="calculateEFT()">Calculate EFT and Funding Values</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script>
+        function calculateEFT() {
+            // Fetch values from input fields
+            // (You will need to collect inputs for all 56 programs)
+            const values = []; // Collect input values here
+            // Example logic for calculating EFT and funding values
+            let totalEFT = 0;
+            values.forEach((value, index) => {
+                // Apply specific calculations based on programme logic
+                totalEFT += value; // Placeholder calculation
+            });
+            // Output result to the user
+            document.getElementById('result').innerText = `Total EFT: ${totalEFT}`;
+        }
+    </script>
+</body>
+</html>
